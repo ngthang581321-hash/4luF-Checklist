@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index" }
+  ],
+  "crons": [
+    { "path": "/api/reminders/cron", "schedule": "* * * * *" },
+    { "path": "/api/daily-flush-cron", "schedule": "1 17 * * *" }
+  ]
+}
